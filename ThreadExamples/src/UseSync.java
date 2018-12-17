@@ -1,6 +1,8 @@
 
 public class UseSync {
 	private static int count=0;
+	
+	//have it to lock the count
 	public static synchronized void intcount()
 	{
 		count++;
@@ -33,6 +35,7 @@ public class UseSync {
 	});
 	t1.start();
 	t2.start();
+	//execute one after the other
 	try {
 		t1.join();
 		t2.join();
