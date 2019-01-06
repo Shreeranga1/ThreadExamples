@@ -1,7 +1,7 @@
 package ThreadJoinExample;
 
 public class ChildthreadJoin extends Thread {
-    private int getC() {
+    public int getC() {
         return c;
     }
 
